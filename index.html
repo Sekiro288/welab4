@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <title>Lab 4: XML and JSON</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #18212b;
+      --muted: #5b6673;
+      --line: #d9d9d9;
+      --accent: #22587c;
+      --page: #f4f6f8;
+      --surface: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, "Segoe UI", sans-serif;
+      background: var(--page);
+      color: var(--ink);
+    }
+    main {
+      width: min(880px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 42px 0 52px;
+    }
+    h1 { margin: 0 0 8px; font-size: 30px; line-height: 1.2; }
+    p.lede { margin: 0 0 28px; color: var(--muted); }
+    .tasks {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 16px;
+    }
+    .task {
+      padding: 22px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+    }
+    .task h2 { margin: 0 0 8px; font-size: 20px; }
+    .task p { margin: 0 0 18px; color: var(--muted); line-height: 1.5; }
+    .task a {
+      display: inline-block;
+      padding: 10px 14px;
+      border: 1px solid var(--accent);
+      border-radius: 4px;
+      color: var(--accent);
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .task a:hover { background: var(--accent); color: white; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Lab 4: XML and JSON</h1>
+    <p class="lede">Static pages that load data through the Fetch API.</p>
+    <section class="tasks">
+      <article class="task">
+        <h2>XML Book Catalogue</h2>
+        <p>Reads book.xml, validates the parsed XML, and displays each title, author, and price.</p>
+        <a href="xml.html">Open XML page</a>
+      </article>
+      <article class="task">
+        <h2>User Profiles</h2>
+        <p>Reads userProfiles.json and displays identity, preferences, subscription, and address data.</p>
+        <a href="json.html">Open JSON page</a>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
